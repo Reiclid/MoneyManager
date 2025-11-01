@@ -385,6 +385,19 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Примусово встановлюємо білий колір тексту для main-metric */
+.metric-card.main-metric,
+.metric-card.main-metric h3,
+.metric-card.main-metric p,
+.metric-card.main-metric small {
+  color: white !important;
+}
+
+.btn-period-toggle,
+.btn-period-toggle.active {
+  color: white !important;
+}
+
 /* --- Layout --- */
 .main-layout {
   display: grid;
