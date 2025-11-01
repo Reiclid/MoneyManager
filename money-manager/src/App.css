@@ -551,6 +551,8 @@ input[type="date"] {
 }
 
 .tx-details {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
