@@ -3,28 +3,28 @@
   --bg-primary: #fafbfc;
   --bg-secondary: #ffffff;
   --bg-tertiary: #f5f7fa;
-  
+
   --text-primary: #1a1d23;
   --text-secondary: #6b7280;
   --text-tertiary: #9ca3af;
-  
+
   --border-light: #e5e7eb;
   --border-medium: #d1d5db;
-  
+
   --accent-blue: #3b82f6;
   --accent-green: #10b981;
   --accent-red: #ef4444;
   --accent-orange: #f59e0b;
   --accent-purple: #8b5cf6;
-  
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
-  
+
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  
+
   --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -33,20 +33,20 @@ body.dark-theme {
   --bg-primary: #0f1117;
   --bg-secondary: #1a1d26;
   --bg-tertiary: #23262f;
-  
+
   --text-primary: #f9fafb;
   --text-secondary: #d1d5db;
   --text-tertiary: #9ca3af;
-  
+
   --border-light: #2d3139;
   --border-medium: #3d4149;
-  
+
   --accent-blue: #60a5fa;
   --accent-green: #34d399;
   --accent-red: #f87171;
   --accent-orange: #fbbf24;
   --accent-purple: #a78bfa;
-  
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
@@ -396,7 +396,7 @@ body {
   .main-layout {
     grid-template-columns: 1fr;
   }
-  
+
   .sidebar {
     order: 2;
   }
@@ -518,7 +518,7 @@ input[type="date"] {
   display: none;
 }
 
-.radio-group input:checked + label {
+.radio-group input:checked+label {
   background: var(--accent-blue);
   border-color: var(--accent-blue);
   color: white;
@@ -728,6 +728,7 @@ input[type="date"] {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -738,6 +739,7 @@ input[type="date"] {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -855,34 +857,231 @@ input[type="date"] {
 /* --- Responsive --- */
 @media (max-width: 640px) {
   .app-container {
-    padding: 16px;
+    padding: 12px;
   }
-  
+
   .app-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
+    padding: 16px 0 20px;
   }
-  
+
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
   .user-panel {
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
-  
+
+  .user-panel span {
+    font-size: 0.8125rem;
+  }
+
+  .btn-theme-toggle,
+  .btn-logout {
+    padding: 6px 12px;
+    font-size: 0.8125rem;
+  }
+
+  /* Dashboard метрики */
   .metrics-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
-  
+
+  .metric-card {
+    padding: 16px;
+  }
+
+  .metric-card h3 {
+    font-size: 0.75rem;
+  }
+
+  .metric-card p {
+    font-size: 1.5rem;
+  }
+
+  .metric-card.main-metric {
+    padding: 20px;
+  }
+
+  .metric-card.main-metric p {
+    font-size: 2rem;
+  }
+
+  /* Перемикачі періоду */
+  .period-toggle-buttons {
+    flex-direction: row;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .btn-period-toggle {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+  }
+
+  /* Card padding */
+  .card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+
+  /* Форми */
   .form-controls {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
-  
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group label {
+    font-size: 0.8125rem;
+    margin-bottom: 6px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="password"],
+  select {
+    padding: 10px 12px;
+    font-size: 0.875rem;
+  }
+
+  /* Кнопки */
+  .btn-submit,
+  .btn-import,
+  .btn-delete {
+    padding: 12px 16px;
+    font-size: 0.875rem;
+  }
+
+  .btn-type {
+    padding: 10px;
+    font-size: 0.875rem;
+  }
+
+  /* Транзакції */
+  .tx-item {
+    padding: 12px 0;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tx-desc {
+    font-size: 0.875rem;
+  }
+
+  .tx-meta {
+    font-size: 0.75rem;
+  }
+
+  .tx-amount {
+    font-size: 1rem;
+    margin-left: 0;
+    width: 100%;
+    text-align: right;
+  }
+
+  /* Цілі */
+  .goal-item {
+    padding: 12px 0;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .goal-name {
+    font-size: 0.875rem;
+  }
+
+  .goal-meta {
+    font-size: 0.75rem;
+  }
+
+  /* Рахунки */
+  .account-list li {
+    padding: 10px 0;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  /* Модальне вікно */
   .modal-content {
     width: 95%;
+    max-height: 85vh;
   }
-  
+
+  .modal-header {
+    padding: 16px;
+  }
+
+  .modal-header h3 {
+    font-size: 1.125rem;
+  }
+
+  .modal-body {
+    padding: 16px;
+  }
+
+  /* Login */
   .login-form {
-    padding: 28px;
+    padding: 24px;
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  /* Фільтри */
+  .filter-controls {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+
+  .filter-quick-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .btn-quick-filter,
+  .btn-filter {
+    padding: 10px 12px;
+    font-size: 0.8125rem;
+  }
+
+  /* Radio групи */
+  .radio-group {
+    gap: 6px;
+  }
+
+  .radio-group label {
+    padding: 8px 12px;
+    font-size: 0.8125rem;
+  }
+
+  /* Sidebar на мобільних */
+  .main-layout {
+    gap: 16px;
+  }
+
+  .btn-import {
+    margin-bottom: 16px;
   }
 }
 
