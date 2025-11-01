@@ -345,7 +345,7 @@ body {
 }
 
 .metric-card.main-metric small {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
 }
 
 /* --- Перемикачі періоду в головній метриці --- */
@@ -353,7 +353,8 @@ body {
   display: flex;
   gap: 8px;
   margin-bottom: 16px;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: var(--text-secondary);
   padding: 4px;
   border-radius: var(--radius-sm);
   backdrop-filter: blur(10px);
