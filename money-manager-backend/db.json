@@ -1,0 +1,3660 @@
+{
+  "users": {
+    "Reiclid": "$2b$10$39.H2.QoPW4.ZyMtMJVKTudC5t/bJN2ZrKK0vcqx6XANDkgYUluoC"
+  },
+  "data": {
+    "Reiclid": {
+      "accounts": [
+        {
+          "id": "acc_1761999805482",
+          "name": "Готівка",
+          "initialBalance": 0
+        },
+        {
+          "id": "acc_1761999821550",
+          "name": "Privat",
+          "initialBalance": 6000
+        },
+        {
+          "id": "acc_1762000267898",
+          "name": "BlackMono",
+          "initialBalance": 0
+        }
+      ],
+      "transactions": [
+        {
+          "id": "imp_1762000277935_0.4270681794269813",
+          "date": "2025-11-01T02:06:06",
+          "description": "Скасування. Google",
+          "amount": 33.38,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.7812995872382802",
+          "date": "2025-10-24T01:37:39",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.6394922765375555",
+          "date": "2025-10-23T12:23:26",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.1648983068299157",
+          "date": "2025-10-23T12:22:49",
+          "description": "Часткове зняття банки «На майбутнє»",
+          "amount": 50,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.004951063905986874",
+          "date": "2025-10-17T00:43:21",
+          "description": "Київстар +380684877221",
+          "amount": 2,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.24118186105023653",
+          "date": "2025-10-17T00:42:00",
+          "description": "З білої картки",
+          "amount": 1,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.47210899188642763",
+          "date": "2025-10-17T00:32:02",
+          "description": "Скасування Vodafone +380995026526",
+          "amount": 1,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.8331251815646479",
+          "date": "2025-10-17T00:24:23",
+          "description": "Vodafone +380995026526",
+          "amount": 1,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.46495936560011497",
+          "date": "2025-10-17T00:21:37",
+          "description": "Часткове зняття банки «На майбутнє»",
+          "amount": 1,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.7333233477464176",
+          "date": "2025-09-24T01:31:31",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.0072107079403054275",
+          "date": "2025-09-23T12:22:12",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.8790240713360487",
+          "date": "2025-09-22T23:35:19",
+          "description": "Часткове зняття банки «На майбутнє»",
+          "amount": 50,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.5446967387951649",
+          "date": "2025-08-26T01:13:30",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.97013170373292",
+          "date": "2025-08-25T12:23:11",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.43600524808698804",
+          "date": "2025-08-25T12:22:54",
+          "description": "Часткове зняття банки «На майбутнє»",
+          "amount": 50,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.8071333586204212",
+          "date": "2025-08-24T05:24:33",
+          "description": "Регулярне поповнення «На майбутнє»",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.8835729672860468",
+          "date": "2025-08-23T12:22:41",
+          "description": "Часткове зняття банки «На майбутнє»",
+          "amount": 50,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.5584469597814277",
+          "date": "2025-07-24T01:16:28",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.23772052680716005",
+          "date": "2025-07-23T12:22:05",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.47042117000271877",
+          "date": "2025-07-22T13:06:11",
+          "description": "Часткове зняття банки «На майбутнє»",
+          "amount": 20,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.7293467512364524",
+          "date": "2025-06-30T11:48:22",
+          "description": "Vodafone +380995026526",
+          "amount": 200,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.6499935857689954",
+          "date": "2025-06-24T05:23:41",
+          "description": "Регулярне поповнення «На майбутнє»",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.10090399022621077",
+          "date": "2025-06-23T01:12:43",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.28196835127607",
+          "date": "2025-06-22T12:22:01",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.4599336554635247",
+          "date": "2025-05-30T09:56:38",
+          "description": "Від: Владислав Сокирко",
+          "amount": 100,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.4411636951283662",
+          "date": "2025-05-24T05:23:42",
+          "description": "Регулярне поповнення «На майбутнє»",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.8805277217842162",
+          "date": "2025-05-23T01:17:52",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.6298711526418241",
+          "date": "2025-05-22T12:22:00",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.11034504902418307",
+          "date": "2025-05-15T20:52:53",
+          "description": "Від: Medvediuk Artem",
+          "amount": 250,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.05533155201332263",
+          "date": "2025-04-24T05:25:07",
+          "description": "Регулярне поповнення «На майбутнє»",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.7574094328742507",
+          "date": "2025-04-23T01:23:36",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.9961556423437048",
+          "date": "2025-04-22T12:22:02",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.6917164996081167",
+          "date": "2025-04-11T01:22:20",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 9,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.010249650367347485",
+          "date": "2025-04-10T16:06:53",
+          "description": "McDonald’s",
+          "amount": 611,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.7505153956198187",
+          "date": "2025-04-05T21:47:33",
+          "description": "Від: Дмитрій Шевчук",
+          "amount": 150,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.24263512931664555",
+          "date": "2025-04-05T21:46:06",
+          "description": "Multiplex",
+          "amount": 300,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.48570233695875964",
+          "date": "2025-04-04T10:28:39",
+          "description": "Derma Plyus",
+          "amount": 500,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.40730263761262764",
+          "date": "2025-04-03T20:41:30",
+          "description": "Від: Hrushevytska Yevheniia",
+          "amount": 1000,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.27836803501335705",
+          "date": "2025-04-03T12:50:06",
+          "description": "Від: Kostenko Artem",
+          "amount": 200,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.7461114600426004",
+          "date": "2025-03-27T01:18:24",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 1.16,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.461787886200558",
+          "date": "2025-03-26T20:08:48",
+          "description": "TRBT/tribute.tg",
+          "amount": 108.84,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.05444357021580393",
+          "date": "2025-03-24T05:25:04",
+          "description": "Регулярне поповнення «На майбутнє»",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.5673124692346407",
+          "date": "2025-03-23T01:35:39",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.8247427120394981",
+          "date": "2025-03-22T11:21:59",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.30782867075464826",
+          "date": "2025-03-21T01:36:29",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 8.4,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.36320635726738626",
+          "date": "2025-03-20T13:20:40",
+          "description": "АТБ",
+          "amount": 91.6,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.12471569229748902",
+          "date": "2025-03-20T13:20:19",
+          "description": "Від: Дмитрій Шевчук",
+          "amount": 110,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.703247662223262",
+          "date": "2025-03-18T16:50:15",
+          "description": "414943****7337",
+          "amount": 220,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.8539727262558954",
+          "date": "2025-03-16T01:35:42",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 9,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.5658302299270128",
+          "date": "2025-03-15T21:22:12",
+          "description": "Скасування. Steam",
+          "amount": 209,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277935_0.1830699912284417",
+          "date": "2025-03-15T02:11:57",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 1,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.48997506658052514",
+          "date": "2025-03-14T19:37:55",
+          "description": "Steam",
+          "amount": 209,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.6808998303885179",
+          "date": "2025-03-10T20:35:47",
+          "description": "545708****4112",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.13363850095206864",
+          "date": "2025-02-26T18:27:48",
+          "description": "414960****4477",
+          "amount": 70,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277935_0.9482974404137017",
+          "date": "2025-02-24T23:23:00",
+          "description": "Від: Дмитрій Шевчук",
+          "amount": 100,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277936_0.8819972506012528",
+          "date": "2025-02-24T05:26:26",
+          "description": "Регулярне поповнення «На майбутнє»",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.06286716603987319",
+          "date": "2025-02-23T01:32:59",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.5627752997696709",
+          "date": "2025-02-22T11:21:59",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.47094392428264387",
+          "date": "2025-02-09T15:42:41",
+          "description": "Від: Дмитрій Шевчук",
+          "amount": 800,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277936_0.7796509484952396",
+          "date": "2025-01-24T01:33:40",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.6987818544656792",
+          "date": "2025-01-23T11:23:34",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.03771120161968722",
+          "date": "2025-01-22T17:06:33",
+          "description": "P24 *Hrushevytskyi Denys",
+          "amount": 50,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277936_0.26615714998965756",
+          "date": "2024-12-24T05:22:33",
+          "description": "Регулярне поповнення «На майбутнє»",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.5307337987972165",
+          "date": "2024-12-24T01:34:16",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.4016677910388393",
+          "date": "2024-12-23T19:14:45",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.623058974068291",
+          "date": "2024-12-23T11:48:03",
+          "description": "P24 *Hrushevytskyi Denys",
+          "amount": 100,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1762000277936_0.8098196042762091",
+          "date": "2024-11-26T01:35:32",
+          "description": "Округлення балансу «На майбутнє»",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.9599951082246427",
+          "date": "2024-11-25T11:22:51",
+          "description": "Google",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1762000267898",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1762000277936_0.8781394783287189",
+          "date": "2024-11-24T11:26:14",
+          "description": "P24 *Hrushevytskyi Denys",
+          "amount": 50,
+          "type": "income",
+          "accountId": "acc_1762000267898",
+          "budgetType": null
+        },
+        {
+          "description": "правильне сопоставлення",
+          "amount": 1163.63,
+          "type": "income",
+          "date": "2025-11-01",
+          "accountId": "acc_1761999821550",
+          "budgetType": null,
+          "id": "tx_1762000126456"
+        },
+        {
+          "id": "imp_1761999842101_0.9726887219385865",
+          "date": "2025-10-30T19:33:25",
+          "description": "Скарбничка",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.5899727524585265",
+          "date": "2025-10-30T19:31:17",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.438855542951768",
+          "date": "2025-10-30T17:27:25",
+          "description": "Скарбничка",
+          "amount": 1.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.25051661182267915",
+          "date": "2025-10-30T17:22:29",
+          "description": "АТБ",
+          "amount": 38.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.47856942330432006",
+          "date": "2025-10-30T14:29:48",
+          "description": "Скарбничка",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.1695983492691986",
+          "date": "2025-10-30T14:26:24",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.03213064084562922",
+          "date": "2025-10-28T03:22:46",
+          "description": "Округлення залишку на Скарбничку",
+          "amount": 8.97,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.5100180663937441",
+          "date": "2025-10-27T18:26:20",
+          "description": "CITYCARD, ID платежу: 2732662614",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.728980802099648",
+          "date": "2025-10-27T18:12:24",
+          "description": "Скарбничка",
+          "amount": 5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.4463159191930799",
+          "date": "2025-10-27T18:09:06",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.9317540108908473",
+          "date": "2025-10-27T15:51:00",
+          "description": "Скарбничка",
+          "amount": 5000,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.5519248328856792",
+          "date": "2025-10-27T15:44:14",
+          "description": "KAVA Point",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.895072761426154",
+          "date": "2025-10-27T15:16:41",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.2541253759553075",
+          "date": "2025-10-26T16:01:18",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.10853347177483474",
+          "date": "2025-10-26T15:54:35",
+          "description": "АТБ",
+          "amount": 50.3,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.3394229468590617",
+          "date": "2025-10-21T16:38:58",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.7898450526988292",
+          "date": "2025-10-21T16:23:23",
+          "description": "Медведюк А.",
+          "amount": 100,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842102_0.11986249800273385",
+          "date": "2025-10-21T14:56:41",
+          "description": "ОСТРIВ РОЗВАГ",
+          "amount": 150,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.2490680121673532",
+          "date": "2025-10-21T14:15:37",
+          "description": "від ANASTASIIA KOZIK",
+          "amount": 139.3,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842102_0.16556644954679078",
+          "date": "2025-10-21T14:15:28",
+          "description": "Коржовська В.",
+          "amount": 140,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842102_0.17929878471289418",
+          "date": "2025-10-21T14:15:02",
+          "description": "від NADIIA KHOMENKO",
+          "amount": 139.3,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842102_0.752399298873855",
+          "date": "2025-10-21T14:12:25",
+          "description": "Multiplex",
+          "amount": 700,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.2744279705132451",
+          "date": "2025-10-21T07:55:23",
+          "description": "АТБ",
+          "amount": 93.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.13144584348623956",
+          "date": "2025-10-21T07:39:53",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.44914032011804594",
+          "date": "2025-10-21T06:56:30",
+          "description": "CITYCARD, ID платежу: 2729550755",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.6769965878106572",
+          "date": "2025-10-18T11:53:43",
+          "description": "Стипендія",
+          "amount": 3007.66,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842102_0.10386643053047107",
+          "date": "2025-10-16T19:19:16",
+          "description": "CITYCARD, ID платежу: 2727531832",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.41469095551323765",
+          "date": "2025-10-16T18:42:12",
+          "description": "KAVA Point",
+          "amount": 115,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842102_0.9350636749872996",
+          "date": "2025-10-16T14:56:54",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.05556721027937095",
+          "date": "2025-10-15T20:29:42",
+          "description": "McDonald’s",
+          "amount": 528,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.19672725490310317",
+          "date": "2025-10-15T18:25:37",
+          "description": "FUNDUK, ZHYTOMYR",
+          "amount": 68.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.7849017328305719",
+          "date": "2025-10-15T16:17:10",
+          "description": "CITYCARD, ID платежу: 2726902519",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.7841578955067892",
+          "date": "2025-10-13T19:24:44",
+          "description": "KAVA Point",
+          "amount": 100,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.025007370028345077",
+          "date": "2025-10-13T15:50:16",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.740457707708102",
+          "date": "2025-10-13T15:06:48",
+          "description": "CITYCARD, ID платежу: 2725851188",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.01910504654378742",
+          "date": "2025-10-10T11:33:21",
+          "description": "Коткова В.",
+          "amount": 271.36,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.44513127609196146",
+          "date": "2025-10-07T19:15:42",
+          "description": "CITYCARD, ID платежу: 2722915454",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.6279729408322638",
+          "date": "2025-10-07T18:54:51",
+          "description": "Аврора",
+          "amount": 88,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.276776026898756",
+          "date": "2025-10-07T10:39:35",
+          "description": "Vodafone",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.6126343583709357",
+          "date": "2025-10-07T08:19:49",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.18758677413748015",
+          "date": "2025-10-06T23:02:29",
+          "description": "Temu",
+          "amount": 440.66,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.39752027815030155",
+          "date": "2025-10-06T18:23:31",
+          "description": "Медведюк А.",
+          "amount": 50,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842103_0.25144804529646025",
+          "date": "2025-10-06T18:02:31",
+          "description": "KAVA Point",
+          "amount": 20,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.14756119267898793",
+          "date": "2025-10-06T18:02:14",
+          "description": "KAVA Point",
+          "amount": 100,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.06391399622393124",
+          "date": "2025-10-06T16:17:20",
+          "description": "АТБ",
+          "amount": 47.6,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.48467770663038356",
+          "date": "2025-10-06T14:38:20",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.46930266377502794",
+          "date": "2025-10-06T13:50:29",
+          "description": "CITYCARD, ID платежу: 2722230343",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.44554155609681567",
+          "date": "2025-10-05T01:08:22",
+          "description": "На картку. Коментар: за дньюху, забув :)",
+          "amount": 1005,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.40626816552332223",
+          "date": "2025-10-02T18:56:12",
+          "description": "CITYCARD, ID платежу: 2720534190",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.5245164168455434",
+          "date": "2025-10-02T15:48:45",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.5820483543337505",
+          "date": "2025-10-02T14:59:02",
+          "description": "CITYCARD, ID платежу: 2720408530",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.7933648640143358",
+          "date": "2025-10-01T12:41:17",
+          "description": "АТБ",
+          "amount": 88.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842103_0.8280009692227521",
+          "date": "2025-10-01T08:47:47",
+          "description": "+380995026526",
+          "amount": 214,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.7545726121271439",
+          "date": "2025-10-01T06:00:44",
+          "description": "MOBILE BANKING, KYIV",
+          "amount": 995,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842104_0.542814444826254",
+          "date": "2025-09-30T23:50:55",
+          "description": "Uklon",
+          "amount": 22,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.8563090045526878",
+          "date": "2025-09-30T23:33:49",
+          "description": "Uklon",
+          "amount": 131,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.6879069664727311",
+          "date": "2025-09-30T23:21:18",
+          "description": "Фора",
+          "amount": 17.9,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.8522454132349695",
+          "date": "2025-09-30T15:59:55",
+          "description": "CITYCARD, ID платежу: 2719302317",
+          "amount": 30,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.6536271336413226",
+          "date": "2025-09-28T12:49:42",
+          "description": "На картку",
+          "amount": 1005,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.2831033715075506",
+          "date": "2025-09-28T01:39:31",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.19491957071868016",
+          "date": "2025-09-26T12:55:00",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.3981933726162563",
+          "date": "2025-09-26T12:48:11",
+          "description": "CITYCARD, ID платежу: 2717324713",
+          "amount": 20,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.03681377949161768",
+          "date": "2025-09-26T10:17:32",
+          "description": "CITYCARD, ID платежу: 2717238527",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.781100352954408",
+          "date": "2025-09-25T22:10:03",
+          "description": "Uklon",
+          "amount": 28,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.8873086184265697",
+          "date": "2025-09-25T21:48:30",
+          "description": "Uklon",
+          "amount": 168,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.33696897245394286",
+          "date": "2025-09-25T21:11:14",
+          "description": "АТБ",
+          "amount": 72.3,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.532934932523913",
+          "date": "2025-09-25T17:01:28",
+          "description": "АТБ",
+          "amount": 54.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.47764821556254744",
+          "date": "2025-09-25T16:03:53",
+          "description": "CITYCARD, ID платежу: 2716943643",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.7613851059051082",
+          "date": "2025-09-23T20:24:35",
+          "description": "Медведюк А.",
+          "amount": 230,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.37572310516085117",
+          "date": "2025-09-23T15:06:49",
+          "description": "Фора",
+          "amount": 20.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.8726957429570086",
+          "date": "2025-09-23T13:46:16",
+          "description": "KFC",
+          "amount": 350,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.5193289796397853",
+          "date": "2025-09-23T13:41:42",
+          "description": "KFC",
+          "amount": 744,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.4672271218266617",
+          "date": "2025-09-23T07:58:30",
+          "description": "CITYCARD, ID платежу: 2715659027",
+          "amount": 17,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.39059741076338117",
+          "date": "2025-09-23T06:50:28",
+          "description": "CITYCARD, ID платежу: 2715646501",
+          "amount": 17,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842104_0.47924058828638416",
+          "date": "2025-09-22T19:07:44",
+          "description": "CITYCARD, ID платежу: 2715506420",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.36327472593653276",
+          "date": "2025-09-22T18:27:50",
+          "description": "CITYCARD, ID платежу: 2715485067",
+          "amount": 15,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.6380165242681981",
+          "date": "2025-09-22T16:15:55",
+          "description": "АТБ",
+          "amount": 51.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.367744282613083",
+          "date": "2025-09-22T14:46:25",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.21648666733134858",
+          "date": "2025-09-22T13:29:01",
+          "description": "CITYCARD, ID платежу: 2715309925",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.4066305166762907",
+          "date": "2025-09-22T08:58:15",
+          "description": "Стипендія",
+          "amount": 3007.66,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842105_0.4058199192234344",
+          "date": "2025-09-18T16:13:06",
+          "description": "АТБ",
+          "amount": 79.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.13385858281919938",
+          "date": "2025-09-18T14:06:44",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.19846516447773932",
+          "date": "2025-09-18T13:12:01",
+          "description": "CITYCARD, ID платежу: 2713278390",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.7958335705073216",
+          "date": "2025-09-15T18:29:51",
+          "description": "CITYCARD, ID платежу: 2711698218",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.3699317759720102",
+          "date": "2025-09-15T16:19:37",
+          "description": "АТБ",
+          "amount": 52.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.5812519796977711",
+          "date": "2025-09-15T15:46:01",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.6622828710606865",
+          "date": "2025-09-15T14:44:35",
+          "description": "CITYCARD, ID платежу: 2711559579",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.19157934761635653",
+          "date": "2025-09-09T22:31:54",
+          "description": "Steam",
+          "amount": 325,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.31375500970617765",
+          "date": "2025-09-09T12:56:53",
+          "description": "CITYCARD, ID платежу: 2708021013",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.6064395878470972",
+          "date": "2025-09-09T10:46:18",
+          "description": "Медведюк А.",
+          "amount": 200,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.5232156881187635",
+          "date": "2025-09-09T07:09:09",
+          "description": "CITYCARD, ID платежу: 2707782806",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.2853770664671522",
+          "date": "2025-09-08T18:10:31",
+          "description": "CITYCARD, ID платежу: 2707560127",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.4545610810772953",
+          "date": "2025-09-08T17:56:10",
+          "description": "АТБ",
+          "amount": 14.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.9598356228811082",
+          "date": "2025-09-04T11:36:55",
+          "description": "АТБ",
+          "amount": 102.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842105_0.762582810044852",
+          "date": "2025-09-04T09:19:53",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.27852969698649943",
+          "date": "2025-09-04T08:51:50",
+          "description": "CITYCARD, ID платежу: 2704904389",
+          "amount": 39,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.5697708230761291",
+          "date": "2025-09-03T18:03:38",
+          "description": "АТБ",
+          "amount": 43.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.9548450870823464",
+          "date": "2025-09-03T16:13:39",
+          "description": "АТБ",
+          "amount": 34.3,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.9446686005572194",
+          "date": "2025-09-03T14:48:04",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.3103103986176525",
+          "date": "2025-09-03T14:03:35",
+          "description": "CITYCARD, ID платежу: 2704520440",
+          "amount": 52,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.08509906168205572",
+          "date": "2025-09-02T18:55:46",
+          "description": "CITYCARD, ID платежу: 2704104589",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.776474787152762",
+          "date": "2025-09-02T16:10:49",
+          "description": "АТБ",
+          "amount": 93.9,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.9868781788580172",
+          "date": "2025-09-02T12:48:03",
+          "description": "+380995026526",
+          "amount": 214,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.9693879793827869",
+          "date": "2025-09-02T12:46:11",
+          "description": "CITYCARD, ID платежу: 2703899279",
+          "amount": 14,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.48876040874648163",
+          "date": "2025-08-28T01:48:34",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.2395944261823253",
+          "date": "2025-08-16T17:08:13",
+          "description": "Стипендія",
+          "amount": 3007.66,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842106_0.5325222947179229",
+          "date": "2025-08-14T22:22:42",
+          "description": "Steam",
+          "amount": 199,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.8707049395374082",
+          "date": "2025-08-12T19:50:24",
+          "description": "На картку",
+          "amount": 405,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.050308984858493444",
+          "date": "2025-08-06T15:17:26",
+          "description": "Сільпо",
+          "amount": 117.98,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.8457132626923243",
+          "date": "2025-08-02T10:27:19",
+          "description": "+380995026526",
+          "amount": 204,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.2460132737677827",
+          "date": "2025-07-31T17:25:06",
+          "description": "Karabas",
+          "amount": 667,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.3392442095261399",
+          "date": "2025-07-28T01:28:12",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.05343835314143397",
+          "date": "2025-07-18T13:34:20",
+          "description": "Стипендія",
+          "amount": 3007.66,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842106_0.77942593255795",
+          "date": "2025-07-09T17:01:25",
+          "description": "Steam",
+          "amount": 520,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.3526399807900584",
+          "date": "2025-07-09T15:45:10",
+          "description": "Грушевицький С.",
+          "amount": 1400,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.28850458007543445",
+          "date": "2025-07-07T22:46:15",
+          "description": "Грушевицька Я.",
+          "amount": 700,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842106_0.5902884623517248",
+          "date": "2025-07-07T21:47:31",
+          "description": "XPZ*kriivka, Lviv",
+          "amount": 1639,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.048853852916254326",
+          "date": "2025-07-07T19:40:51",
+          "description": "Bubble Boss",
+          "amount": 90,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.7776602937528441",
+          "date": "2025-07-07T12:23:20",
+          "description": "ОККО",
+          "amount": 49.9,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.25863510818565727",
+          "date": "2025-07-04T03:43:41",
+          "description": "WOG",
+          "amount": 90,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.8662838157721608",
+          "date": "2025-07-04T01:05:10",
+          "description": "АЗК та АГЗП 113 с Корнин",
+          "amount": 41,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.35994610368662383",
+          "date": "2025-07-02T11:55:43",
+          "description": "Магазин одягу",
+          "amount": 565,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.726717738397892",
+          "date": "2025-07-01T09:54:13",
+          "description": "CITYCARD, ID платежу: 2670487693",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.3094873023614866",
+          "date": "2025-06-28T01:35:28",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.00950395658947123",
+          "date": "2025-06-17T13:21:38",
+          "description": "Стипендія",
+          "amount": 2880.9,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842106_0.952817171229323",
+          "date": "2025-06-12T09:44:28",
+          "description": "Гуліч О.",
+          "amount": 1000,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842106_0.8333578281226588",
+          "date": "2025-06-08T22:29:54",
+          "description": "Uklon",
+          "amount": 31,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.28371577621993893",
+          "date": "2025-06-08T22:05:03",
+          "description": "Uklon",
+          "amount": 157,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.7626380661059067",
+          "date": "2025-06-08T18:29:50",
+          "description": "METROPOLITEN, KYIV",
+          "amount": 8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.9329908210427977",
+          "date": "2025-06-08T17:43:22",
+          "description": "Ice cream king",
+          "amount": 110,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.43895737721293937",
+          "date": "2025-06-08T17:27:08",
+          "description": "На картку",
+          "amount": 857,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842106_0.5524466130492929",
+          "date": "2025-06-08T17:00:57",
+          "description": "Київський метрополітен",
+          "amount": 8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.4304804294391644",
+          "date": "2025-06-08T11:50:40",
+          "description": "Київський метрополітен",
+          "amount": 8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.2849242294585812",
+          "date": "2025-06-08T08:46:57",
+          "description": "CITYCARD, ID платежу: 2657752295",
+          "amount": 14,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.23845578533723133",
+          "date": "2025-06-07T15:03:37",
+          "description": "Грушевицький В.",
+          "amount": 1000,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.6169966347679026",
+          "date": "2025-06-01T16:41:32",
+          "description": "Грушевицький С.. Коментар: за таксі",
+          "amount": 1000,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.509357349302064",
+          "date": "2025-06-01T12:01:31",
+          "description": "+380995026526",
+          "amount": 254,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.7963435446352478",
+          "date": "2025-05-28T01:18:00",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.05122855522018832",
+          "date": "2025-05-22T13:45:31",
+          "description": "CITYCARD, ID платежу: 2649427984",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.5779707828587342",
+          "date": "2025-05-22T13:28:19",
+          "description": "АТБ",
+          "amount": 77.6,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.6595920576728325",
+          "date": "2025-05-22T10:51:42",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.45105746776698585",
+          "date": "2025-05-22T09:53:55",
+          "description": "CITYCARD, ID платежу: 2649292128",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.048236232241596566",
+          "date": "2025-05-21T23:11:33",
+          "description": "Арсентьєв Д.",
+          "amount": 60.3,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.3444618168563016",
+          "date": "2025-05-21T18:35:36",
+          "description": "CITYCARD, ID платежу: 2649068978",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.43502691163000207",
+          "date": "2025-05-21T13:31:29",
+          "description": "CITYCARD, ID платежу: 2648887107",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.8431732508641001",
+          "date": "2025-05-19T08:57:59",
+          "description": "Стипендія",
+          "amount": 2880.9,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842107_0.6979600238446566",
+          "date": "2025-05-17T12:54:26",
+          "description": "Грушевицький С.",
+          "amount": 200,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.4356269887407742",
+          "date": "2025-05-15T14:11:10",
+          "description": "CITYCARD, ID платежу: 2645672859",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.10476145519539415",
+          "date": "2025-05-15T13:25:10",
+          "description": "АТБ",
+          "amount": 13.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.26757314110627783",
+          "date": "2025-05-15T09:18:43",
+          "description": "АТБ",
+          "amount": 19.4,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.5737459418872191",
+          "date": "2025-05-15T08:40:57",
+          "description": "CITYCARD, ID платежу: 2645456512",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.7113737317310034",
+          "date": "2025-05-13T15:35:28",
+          "description": "АТБ",
+          "amount": 37.6,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.1556873336206126",
+          "date": "2025-05-13T15:04:10",
+          "description": "Медведюк А.",
+          "amount": 110,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.5049917774756099",
+          "date": "2025-05-13T13:57:54",
+          "description": "CITYCARD, ID платежу: 2644433741",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.9010713399344168",
+          "date": "2025-05-13T08:29:58",
+          "description": "CITYCARD, ID платежу: 2644210649",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.35241427917998935",
+          "date": "2025-05-10T13:48:11",
+          "description": "Коткова В.",
+          "amount": 201.01,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.7468004243951372",
+          "date": "2025-05-08T13:48:54",
+          "description": "Сільпо",
+          "amount": 55.99,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.6802761905117072",
+          "date": "2025-05-08T13:32:10",
+          "description": "CITYCARD, ID платежу: 2641512432",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.9354280226124967",
+          "date": "2025-05-08T10:02:45",
+          "description": "CITYCARD, ID платежу: 2641382364",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.8922713572199306",
+          "date": "2025-05-05T18:29:36",
+          "description": "CITYCARD, ID платежу: 2640136476",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.6595528888494773",
+          "date": "2025-05-05T16:43:36",
+          "description": "АТБ",
+          "amount": 65.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.6214048655962603",
+          "date": "2025-05-05T13:39:40",
+          "description": "CITYCARD, ID платежу: 2639986572",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.44532373817618276",
+          "date": "2025-05-01T13:37:31",
+          "description": "Пчелка",
+          "amount": 27.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.503997137801643",
+          "date": "2025-05-01T11:30:50",
+          "description": "АТБ",
+          "amount": 61.1,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.055372236838465705",
+          "date": "2025-05-01T06:58:35",
+          "description": "CITYCARD, ID платежу: 2637880890",
+          "amount": 40,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.21538790689878162",
+          "date": "2025-04-29T14:51:13",
+          "description": "CITYCARD, ID платежу: 2637089733",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.30591517285051073",
+          "date": "2025-04-29T11:22:15",
+          "description": "АТБ",
+          "amount": 63.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.6326862389766497",
+          "date": "2025-04-29T08:16:06",
+          "description": "+380995026526",
+          "amount": 254,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.5697500102625692",
+          "date": "2025-04-28T01:36:40",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.21208143532291102",
+          "date": "2025-04-24T14:48:14",
+          "description": "CITYCARD, ID платежу: 2634739231",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.517127530627373",
+          "date": "2025-04-24T13:41:43",
+          "description": "KAVA Point",
+          "amount": 80,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.2591631340044003",
+          "date": "2025-04-24T11:05:38",
+          "description": "АТБ",
+          "amount": 35.3,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.003471943944654221",
+          "date": "2025-04-24T10:35:55",
+          "description": "CITYCARD, ID платежу: 2634603755",
+          "amount": 14,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.5040605979469794",
+          "date": "2025-04-23T13:36:11",
+          "description": "CITYCARD, ID платежу: 2634209501",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.19455000020357516",
+          "date": "2025-04-18T16:30:26",
+          "description": "Стипендія",
+          "amount": 2880.9,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842107_0.16130859850050938",
+          "date": "2025-04-17T16:53:58",
+          "description": "CITYCARD, ID платежу: 2631518217",
+          "amount": 20,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.2373950650223997",
+          "date": "2025-04-17T13:15:30",
+          "description": "АТБ",
+          "amount": 109.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.5611319067687965",
+          "date": "2025-04-15T15:03:01",
+          "description": "АТБ",
+          "amount": 95,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.015842761578195308",
+          "date": "2025-04-10T11:23:20",
+          "description": "Coffee Sho",
+          "amount": 107,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.4260892750398302",
+          "date": "2025-04-09T17:39:00",
+          "description": "АТБ",
+          "amount": 127,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842107_0.8416829995746247",
+          "date": "2025-04-09T13:41:31",
+          "description": "Горащук О.",
+          "amount": 502.51,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.19751984299422976",
+          "date": "2025-04-06T11:52:39",
+          "description": "Multiplex",
+          "amount": 185,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.48961873014915813",
+          "date": "2025-04-03T11:28:20",
+          "description": "АТБ",
+          "amount": 42.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.8503120645930617",
+          "date": "2025-03-29T13:36:41",
+          "description": "Кафе дiм млинцiв",
+          "amount": 140,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.0655134563503823",
+          "date": "2025-03-28T01:38:04",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.12701271935829883",
+          "date": "2025-03-27T14:00:19",
+          "description": "АТБ",
+          "amount": 79.6,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.06625248524402716",
+          "date": "2025-03-27T13:15:41",
+          "description": "KAVA Point",
+          "amount": 60,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.4116874155921202",
+          "date": "2025-03-26T16:46:29",
+          "description": "АТБ",
+          "amount": 57.1,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.24489870999268715",
+          "date": "2025-03-24T14:16:51",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.6853859390260919",
+          "date": "2025-03-20T13:52:26",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.8933886836485623",
+          "date": "2025-03-20T11:32:53",
+          "description": "АТБ",
+          "amount": 174.2,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.1694220754424549",
+          "date": "2025-03-18T15:04:25",
+          "description": "АТБ",
+          "amount": 30.9,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.3980517137871096",
+          "date": "2025-03-18T15:01:34",
+          "description": "CITYCARD, ID платежу: 2616113666",
+          "amount": 39,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.6660040924349724",
+          "date": "2025-03-18T14:27:44",
+          "description": "Стипендія",
+          "amount": 2880.9,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842108_0.5615260900699641",
+          "date": "2025-03-18T09:09:20",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.42887369192188207",
+          "date": "2025-03-13T13:40:07",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.035160650984372266",
+          "date": "2025-03-13T11:04:16",
+          "description": "АТБ",
+          "amount": 23.9,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.04545240821623486",
+          "date": "2025-03-13T10:13:43",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.6098962568224051",
+          "date": "2025-03-13T09:56:37",
+          "description": "CITYCARD, ID платежу: 2613251262",
+          "amount": 39,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.8593570350175568",
+          "date": "2025-03-10T18:10:10",
+          "description": "CITYCARD, ID платежу: 2611372297",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.0007217265439645182",
+          "date": "2025-03-10T16:19:08",
+          "description": "АТБ",
+          "amount": 30.9,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.15077626578697334",
+          "date": "2025-03-10T14:15:26",
+          "description": "PP SHERIFF, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.9166503903097956",
+          "date": "2025-03-10T13:43:18",
+          "description": "CITYCARD, ID платежу: 2611178991",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.6404903455542594",
+          "date": "2025-03-08T18:08:42",
+          "description": "NovaPay",
+          "amount": 93.58,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.9535952495648468",
+          "date": "2025-03-08T12:42:58",
+          "description": "WFP.ELECTRON, DNIPRO",
+          "amount": 2716,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.9725991110710139",
+          "date": "2025-03-06T09:38:27",
+          "description": "CITYCARD, ID платежу: 2608554292",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.5750782042064579",
+          "date": "2025-03-06T06:58:55",
+          "description": "CITYCARD, ID платежу: 2608485948",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.3149961509765391",
+          "date": "2025-03-05T11:18:41",
+          "description": "AliExpress",
+          "amount": 263.18,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.7433590282878584",
+          "date": "2025-03-04T14:04:34",
+          "description": "CITYCARD, ID платежу: 2607685151",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842108_0.10393678604440182",
+          "date": "2025-03-04T13:41:32",
+          "description": "AliExpress",
+          "amount": 374.37,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.38582214995802344",
+          "date": "2025-03-04T11:19:29",
+          "description": "АТБ",
+          "amount": 68.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.5348876643420062",
+          "date": "2025-03-04T09:04:42",
+          "description": "CITYCARD, ID платежу: 2607502654",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.8919330902837661",
+          "date": "2025-03-03T18:05:19",
+          "description": "CITYCARD, ID платежу: 2607314858",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.32919802935381814",
+          "date": "2025-03-03T14:49:31",
+          "description": "CITYCARD, ID платежу: 2607211423",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.7553183367985707",
+          "date": "2025-02-28T02:15:16",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.369198417104341",
+          "date": "2025-02-27T13:34:47",
+          "description": "АТБ",
+          "amount": 79.3,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.39129590799890557",
+          "date": "2025-02-27T13:05:13",
+          "description": "CITYCARD, ID платежу: 2605150444",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.04161014410571284",
+          "date": "2025-02-27T10:06:41",
+          "description": "CITYCARD, ID платежу: 2605053256",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.009303262887471186",
+          "date": "2025-02-26T19:08:30",
+          "description": "АТБ",
+          "amount": 85.4,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.7043734474983809",
+          "date": "2025-02-26T18:55:30",
+          "description": "CITYCARD, ID платежу: 2604874190",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.50087657106868",
+          "date": "2025-02-26T13:20:52",
+          "description": "CITYCARD, ID платежу: 2604715641",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.07296444790964984",
+          "date": "2025-02-24T16:21:08",
+          "description": "АТБ",
+          "amount": 10.1,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.8222033087788383",
+          "date": "2025-02-24T13:28:12",
+          "description": "CITYCARD, ID платежу: 2603775812",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.051452136594328346",
+          "date": "2025-02-21T17:08:45",
+          "description": "Rozetka. Коментар: Povernennya Rozetka",
+          "amount": 1859.65,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842109_0.6556594933085638",
+          "date": "2025-02-21T11:55:59",
+          "description": "Дерма Плюс",
+          "amount": 500,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.5701679266138078",
+          "date": "2025-02-20T13:31:43",
+          "description": "CITYCARD, ID платежу: 2601949874",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.11280026045218872",
+          "date": "2025-02-20T11:28:41",
+          "description": "АТБ",
+          "amount": 42.4,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.34118447930341556",
+          "date": "2025-02-20T07:27:04",
+          "description": "CITYCARD, ID платежу: 2601762578",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.10700217672999579",
+          "date": "2025-02-18T14:54:34",
+          "description": "CITYCARD, ID платежу: 2600976318",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.679875598405195",
+          "date": "2025-02-18T11:20:25",
+          "description": "АТБ",
+          "amount": 56.7,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.09569796039408107",
+          "date": "2025-02-18T09:01:56",
+          "description": "CITYCARD, ID платежу: 2600743157",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.9686997242080588",
+          "date": "2025-02-16T14:35:20",
+          "description": "Стипендія",
+          "amount": 2880.9,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842109_0.8559187895699856",
+          "date": "2025-02-15T14:47:20",
+          "description": "Rozetka",
+          "amount": 1869,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.665856900894636",
+          "date": "2025-02-13T13:02:52",
+          "description": "CITYCARD, ID платежу: 2598241701",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.7138101793036387",
+          "date": "2025-02-13T10:22:35",
+          "description": "CITYCARD, ID платежу: 2598131961",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.8261675609799348",
+          "date": "2025-02-12T18:46:09",
+          "description": "АТБ",
+          "amount": 16.9,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.31671514587646254",
+          "date": "2025-02-12T18:28:29",
+          "description": "CITYCARD, ID платежу: 2597874662",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.1228810088339991",
+          "date": "2025-02-12T16:52:39",
+          "description": "Vodafone",
+          "amount": 190,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.33308149648277885",
+          "date": "2025-02-12T14:06:01",
+          "description": "CITYCARD, ID платежу: 2597701955",
+          "amount": 28,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.9363793905492861",
+          "date": "2025-02-11T19:08:21",
+          "description": "fiche pizza, ZHYTOMYR",
+          "amount": 64,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.1591937030660595",
+          "date": "2025-02-11T18:41:43",
+          "description": "CITYCARD, ID платежу: 2597257456",
+          "amount": 19,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.4748210604227028",
+          "date": "2025-02-11T14:00:52",
+          "description": "CITYCARD, ID платежу: 2597066086",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.14820736122412392",
+          "date": "2025-02-10T17:47:18",
+          "description": "CITYCARD, ID платежу: 2596600199",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.09849933036158487",
+          "date": "2025-02-10T16:20:22",
+          "description": "АТБ",
+          "amount": 37.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.4090185558648376",
+          "date": "2025-02-10T14:52:44",
+          "description": "Медведюк А.",
+          "amount": 500,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842109_0.9339832806064106",
+          "date": "2025-02-10T14:02:56",
+          "description": "CITYCARD, ID платежу: 2596440503",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.4569216907628231",
+          "date": "2025-02-06T17:42:33",
+          "description": "CITYCARD, ID платежу: 2594222144",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.9622558866239921",
+          "date": "2025-02-06T14:43:49",
+          "description": "АТБ",
+          "amount": 33.7,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.09494729101516963",
+          "date": "2025-02-05T18:45:00",
+          "description": "CITYCARD, ID платежу: 2593720766",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.22346005922880807",
+          "date": "2025-02-05T18:02:29",
+          "description": "АТБ",
+          "amount": 67,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.9289226293168844",
+          "date": "2025-02-05T15:16:58",
+          "description": "CITYCARD, ID платежу: 2593605587",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.4436322028795503",
+          "date": "2025-02-01T12:50:10",
+          "description": "ФОП Волошина Свiтлана Федорiвна",
+          "amount": 127,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.5062461037981112",
+          "date": "2025-01-28T01:36:03",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.5099705990972985",
+          "date": "2025-01-22T17:06:32",
+          "description": "На картку",
+          "amount": 55,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.3963966846612814",
+          "date": "2025-01-21T18:45:24",
+          "description": "CEB/donationalerts.com, Barbara Strozzilaan 201",
+          "amount": 103.83,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.42981714475742794",
+          "date": "2025-01-21T13:56:54",
+          "description": "Стипендія",
+          "amount": 2880.9,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842110_0.5211607026145453",
+          "date": "2025-01-17T10:31:23",
+          "description": "CITYCARD, ID платежу: 2582940989",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.2076940299864103",
+          "date": "2025-01-16T11:32:51",
+          "description": "CITYCARD, ID платежу: 2582428839",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.3307955139007235",
+          "date": "2025-01-16T11:06:25",
+          "description": "+380995026526",
+          "amount": 204,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.685519910872977",
+          "date": "2025-01-03T12:03:45",
+          "description": "CITYCARD, ID платежу: 2574920919",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.024661897451497383",
+          "date": "2025-01-03T12:03:02",
+          "description": "NovaPay",
+          "amount": 106.63,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.7392762994557305",
+          "date": "2024-12-28T01:33:28",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.23839479968256305",
+          "date": "2024-12-27T18:04:20",
+          "description": "IPAY   *STYLUS.UA, KYIV",
+          "amount": 5215,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.822390118057567",
+          "date": "2024-12-25T15:57:45",
+          "description": "CITYCARD, ID платежу: 2570017732",
+          "amount": 400,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.4477761523710013",
+          "date": "2024-12-23T12:29:04",
+          "description": "Steam",
+          "amount": 292,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.6379195467593459",
+          "date": "2024-12-23T11:48:02",
+          "description": "На картку",
+          "amount": 105,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.040136677987521185",
+          "date": "2024-12-22T18:44:58",
+          "description": "CEB/donationalerts.com, Barbara Strozzilaan 201",
+          "amount": 94.94,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.385566210252283",
+          "date": "2024-12-19T14:23:28",
+          "description": "MAGAZYN MAKRYS, M. ZHYTOMYR",
+          "amount": 22,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.47557104439534026",
+          "date": "2024-12-19T12:59:01",
+          "description": "MICROSOFT*PC 1 MONTH, --",
+          "amount": 230,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.7887193946571609",
+          "date": "2024-12-18T11:27:47",
+          "description": "+380995026526",
+          "amount": 204,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.4695104101684253",
+          "date": "2024-12-16T09:18:44",
+          "description": "Стипендія",
+          "amount": 2993.26,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842110_0.6638633125312263",
+          "date": "2024-12-12T10:55:38",
+          "description": "CITYCARD, ID платежу: 2561502153",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.32645410407201614",
+          "date": "2024-12-12T09:50:10",
+          "description": "MAGAZYN 206, ZHYTOMYR",
+          "amount": 49.1,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.2622904448172063",
+          "date": "2024-12-12T07:18:56",
+          "description": "CITYCARD, ID платежу: 2561388662",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.3268331601799923",
+          "date": "2024-12-11T12:46:27",
+          "description": "CITYCARD, ID платежу: 2560832098",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.6802327328724889",
+          "date": "2024-12-11T07:22:59",
+          "description": "CITYCARD, ID платежу: 2560503492",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.39439232344459274",
+          "date": "2024-12-09T10:53:59",
+          "description": "CITYCARD, ID платежу: 2559245990",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.9731529000959493",
+          "date": "2024-12-09T07:17:55",
+          "description": "CITYCARD, ID платежу: 2559152065",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.17522951264607567",
+          "date": "2024-12-08T17:59:32",
+          "description": "Ашан",
+          "amount": 29.3,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.9276151920257796",
+          "date": "2024-12-08T17:10:08",
+          "description": "CITYCARD, ID платежу: 2558966034",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.7283639292391586",
+          "date": "2024-12-08T16:55:46",
+          "description": "MOBILE BANKING, KYIV",
+          "amount": 1492.5,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842110_0.5568976223562643",
+          "date": "2024-12-07T16:14:41",
+          "description": "Коткова В.",
+          "amount": 201.01,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.5256323453087677",
+          "date": "2024-12-06T20:23:25",
+          "description": "Multiplex",
+          "amount": 160,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.30155697706108553",
+          "date": "2024-12-05T17:30:15",
+          "description": "CITYCARD, ID платежу: 2557588007",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.8663969144423904",
+          "date": "2024-12-05T13:19:30",
+          "description": "АТБ",
+          "amount": 31.1,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.03443653517476153",
+          "date": "2024-12-05T11:20:34",
+          "description": "АТБ",
+          "amount": 17.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.7475871343582501",
+          "date": "2024-12-05T10:22:54",
+          "description": "CITYCARD, ID платежу: 2557353950",
+          "amount": 21,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.3932460337429524",
+          "date": "2024-12-04T14:09:58",
+          "description": "Shaurma Station",
+          "amount": 236,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.39813098224408305",
+          "date": "2024-12-04T13:31:32",
+          "description": "CITYCARD, ID платежу: 2556985802",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.9059679390296627",
+          "date": "2024-12-04T10:19:39",
+          "description": "CITYCARD, ID платежу: 2556891782",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.17038019448252473",
+          "date": "2024-12-03T23:48:08",
+          "description": "Steam",
+          "amount": 482,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.10900567079834644",
+          "date": "2024-12-03T09:44:29",
+          "description": "Кондитерська Молоток",
+          "amount": 280.76,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.7708182284505736",
+          "date": "2024-12-03T08:39:40",
+          "description": "CITYCARD, ID платежу: 2556297768",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.6015906653813916",
+          "date": "2024-11-28T17:12:52",
+          "description": "CITYCARD, ID платежу: 2553778865",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.03875390754255825",
+          "date": "2024-11-28T15:26:46",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.5429242966188346",
+          "date": "2024-11-28T14:37:11",
+          "description": "Ашан",
+          "amount": 26.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.49387895943124804",
+          "date": "2024-11-28T13:46:03",
+          "description": "MCDONALDS 062, ZHYTOMYR",
+          "amount": 286,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.8790168862705463",
+          "date": "2024-11-28T13:19:53",
+          "description": "TOV SAV TRANS, ZHYTOMYR",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842110_0.6323826604239153",
+          "date": "2024-11-28T11:22:41",
+          "description": "Медведюк А.",
+          "amount": 65,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.2820049565449245",
+          "date": "2024-11-28T08:10:25",
+          "description": "CITYCARD, ID платежу: 2553505156",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.898912198750214",
+          "date": "2024-11-28T01:37:13",
+          "description": "Скарбничка",
+          "amount": 50,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.6271983453737222",
+          "date": "2024-11-27T12:52:13",
+          "description": "CITYCARD, ID платежу: 2553158430",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.6311999443450746",
+          "date": "2024-11-27T11:29:01",
+          "description": "MAGAZYN 206, ZHYTOMYR",
+          "amount": 21.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.4371419469512974",
+          "date": "2024-11-27T07:23:06",
+          "description": "CITYCARD, ID платежу: 2553000990",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.1956304295061655",
+          "date": "2024-11-24T11:26:13",
+          "description": "На картку",
+          "amount": 55,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.16499310347819018",
+          "date": "2024-11-20T18:24:24",
+          "description": "+380995026526",
+          "amount": 204,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.06615233830138645",
+          "date": "2024-11-20T12:40:34",
+          "description": "Горащук О.",
+          "amount": 230,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.3724558826269895",
+          "date": "2024-11-19T19:34:51",
+          "description": "MICROSOFT*STORE, --",
+          "amount": 230,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.3834468338749082",
+          "date": "2024-11-18T09:15:20",
+          "description": "Стипендія",
+          "amount": 2880.9,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842111_0.0740148050288838",
+          "date": "2024-11-14T13:05:28",
+          "description": "CITYCARD, ID платежу: 2546783247",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.322723404629927",
+          "date": "2024-11-14T12:31:21",
+          "description": "АТБ",
+          "amount": 58.1,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.3388623105477966",
+          "date": "2024-11-14T07:25:24",
+          "description": "CITYCARD, ID платежу: 2546611384",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.26855698268908346",
+          "date": "2024-11-13T13:51:58",
+          "description": "Арсентьєв Д.",
+          "amount": 160,
+          "type": "income",
+          "accountId": "acc_1761999821550",
+          "budgetType": null
+        },
+        {
+          "id": "imp_1761999842111_0.5828477774230303",
+          "date": "2024-11-13T13:50:26",
+          "description": "На картку",
+          "amount": 585,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.3992062470782416",
+          "date": "2024-11-13T12:53:37",
+          "description": "CITYCARD, ID платежу: 2546274210",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.166691285404996",
+          "date": "2024-11-13T08:45:42",
+          "description": "CITYCARD, ID платежу: 2546142167",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.43301572011136247",
+          "date": "2024-11-10T18:21:11",
+          "description": "На картку",
+          "amount": 255,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.9216699225452525",
+          "date": "2024-11-10T17:42:57",
+          "description": "Київський метрополітен",
+          "amount": 8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.13312943616636352",
+          "date": "2024-11-10T17:10:07",
+          "description": "World of Comics",
+          "amount": 935,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.5531109890407633",
+          "date": "2024-11-10T13:01:26",
+          "description": "Київський метрополітен",
+          "amount": 8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.23049766441331165",
+          "date": "2024-11-10T12:22:56",
+          "description": "MCDONALDS 112, KYYIV",
+          "amount": 376,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.6330271410086472",
+          "date": "2024-11-10T07:04:25",
+          "description": "Uklon",
+          "amount": 21,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.09244007554229738",
+          "date": "2024-11-10T06:45:28",
+          "description": "Uklon",
+          "amount": 145,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.17202610973171706",
+          "date": "2024-11-10T06:37:01",
+          "description": "CITYCARD, ID платежу: 2544634884",
+          "amount": 13,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.022148638047536418",
+          "date": "2024-11-07T17:31:58",
+          "description": "CITYCARD, ID платежу: 2543462612",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.6909362791398668",
+          "date": "2024-11-07T16:23:00",
+          "description": "Медведюк А.",
+          "amount": 150,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.050360408463423934",
+          "date": "2024-11-07T11:26:12",
+          "description": "MAGAZYN 206, ZHYTOMYR",
+          "amount": 31.5,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.17082364472684763",
+          "date": "2024-11-07T10:01:42",
+          "description": "CITYCARD, ID платежу: 2543213905",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.5438562242293914",
+          "date": "2024-11-06T14:36:37",
+          "description": "CITYCARD, ID платежу: 2542883638",
+          "amount": 26,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.3817171758152509",
+          "date": "2024-11-06T13:14:06",
+          "description": "MAGAZYN 206, ZHYTOMYR",
+          "amount": 48.8,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.7038165771795748",
+          "date": "2024-11-06T10:08:50",
+          "description": "CITYCARD, ID платежу: 2542734982",
+          "amount": 14,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        },
+        {
+          "id": "imp_1761999842111_0.32275373071560987",
+          "date": "2024-11-01T13:03:51",
+          "description": "На картку",
+          "amount": 45,
+          "type": "expense",
+          "accountId": "acc_1761999821550",
+          "budgetType": "necessities"
+        }
+      ],
+      "settings": {
+        "monthlyIncome": 3000,
+        "percentNecessities": 20,
+        "percentFun": 30,
+        "percentSavings": 50
+      },
+      "goals": [
+        {
+          "id": "goal_1761999878124",
+          "name": "Одеса",
+          "targetAmount": 20000,
+          "targetDate": "2026-07-01"
+        }
+      ]
+    }
+  }
+}
