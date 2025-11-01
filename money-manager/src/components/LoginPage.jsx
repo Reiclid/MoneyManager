@@ -1,6 +1,6 @@
 ﻿import { useState } from 'react';
 
-const API_URL = 'http://localhost:3001'; // Адреса нашого бек-енду
+const API_URL = 'https://moneymanager002.onrender.com'; // Адреса нашого бек-енду
 
 function LoginPage({ onLoginSuccess }) {
     const [nickname, setNickname] = useState('');
