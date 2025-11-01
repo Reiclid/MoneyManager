@@ -11,7 +11,7 @@ import ImportManager from './components/ImportManager';
 import GoalManager from './components/GoalManager';
 import './App.css';
 
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://moneymanager002.onrender.com';
 
 function App() {
   // --- Стани ---

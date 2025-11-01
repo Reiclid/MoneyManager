@@ -1,192 +1,49 @@
-﻿// money-manager-backend/server.js
-const express = require('express');
+﻿const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const fs = require('fs');
+const fs = require('fs'); // Потрібен тільки для видалення tmp файлів
 const bcrypt = require('bcrypt');
 const multer = require('multer');
 const csv = require('csv-parser');
+const { MongoClient, ObjectId } = require('mongodb'); // <-- ГОЛОВНИЙ ІМПОРТ
 
 const app = express();
-const port = 3001;
-const dbFilePath = './db.json';
+// Render надає свій порт через process.env.PORT
+const port = process.env.PORT || 3001;
 const saltRounds = 10;
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: 'uploads/' }); // Для імпорту
 
+// --- ПІДКЛЮЧЕННЯ ДО MONGODB ATLAS ---
+// Цей рядок шукає "Environment Variable" на Render
+const uri = process.env.MONGODB_URI;
+
+if (!uri) {
+    console.error("!!! MONGODB_URI не знайдено. Сервер не може підключитися до БД.");
+    console.error("!!! Додайте MONGODB_URI в Environment Variables на Render.");
+}
+
+const client = new MongoClient(uri);
+let usersCollection; // Глобальна змінна для доступу до "таблиці" користувачів
+
+// Асинхронна функція для підключення до БД
+async function connectDb() {
+    try {
+        await client.connect();
+        // Назва бази даних береться з вашої URI (те, що ви додали після .net/...)
+        const database = client.db();
+        usersCollection = database.collection("users");
+        console.log("Успішно підключено до MongoDB Atlas!");
+    } catch (e) {
+        console.error("!!! Помилка підключення до MongoDB", e);
+        process.exit(1); // Зупиняємо сервер, якщо не можемо підключитися
+    }
+}
+
+// --- Middleware ---
 app.use(cors());
 app.use(bodyParser.json());
 
-// --- Допоміжні функції (readDb, writeDb - без змін) ---
-const readDb = () => {
-    if (!fs.existsSync(dbFilePath)) {
-        const initialData = { users: {}, data: {} };
-        fs.writeFileSync(dbFilePath, JSON.stringify(initialData, null, 2));
-        return initialData;
-    }
-    try {
-        const data = fs.readFileSync(dbFilePath);
-        return JSON.parse(data);
-    } catch (error) {
-        console.error("Помилка читання db.json", error);
-        const initialData = { users: {}, data: {} };
-        fs.writeFileSync(dbFilePath, JSON.stringify(initialData, null, 2));
-        return initialData;
-    }
-};
-const writeDb = (data) => {
-    fs.writeFileSync(dbFilePath, JSON.stringify(data, null, 2));
-};
-
-// --- API: Автентифікація (Оновлено /register) ---
-app.post('/register', async (req, res) => {
-    const { nickname, password } = req.body;
-    if (!nickname || !password) return res.status(400).json({ message: 'Потрібен нік та пароль' });
-    const db = readDb();
-    if (db.users[nickname]) return res.status(400).json({ message: 'Цей нік вже зайнятий' });
-
-    const hashedPassword = await bcrypt.hash(password, saltRounds);
-    db.users[nickname] = hashedPassword;
-    db.data[nickname] = {
-        accounts: [{ id: `acc_${new Date().getTime()}`, name: 'Готівка', initialBalance: 0 }],
-        transactions: [],
-        settings: {
-            monthlyIncome: 30000,
-            percentNecessities: 50,
-            percentFun: 30,
-            percentSavings: 20
-        },
-        goals: [] // <-- !!! ДОДАНО НОВЕ ПОЛЕ ДЛЯ ЦІЛЕЙ !!!
-    };
-    writeDb(db);
-    res.status(201).json({ message: 'Користувача створено' });
-});
-
-app.post('/login', async (req, res) => {
-    // ... (без змін)
-    const { nickname, password } = req.body;
-    const db = readDb();
-    const userPasswordHash = db.users[nickname];
-    if (!userPasswordHash) return res.status(404).json({ message: 'Користувача не знайдено' });
-    const match = await bcrypt.compare(password, userPasswordHash);
-    if (match) {
-        res.status(200).json({ message: 'Вхід успішний', nickname: nickname });
-    } else {
-        res.status(401).json({ message: 'Неправильний пароль' });
-    }
-});
-
-// --- API: Дані (Оновлено /data) ---
-app.get('/data/:nickname', (req, res) => {
-    const { nickname } = req.params;
-    const db = readDb();
-    if (!db.data[nickname]) return res.status(404).json({ message: 'Дані користувача не знайдено' });
-
-    // Захист від старих користувачів (додаємо відсутні поля)
-    if (!db.data[nickname].accounts) db.data[nickname].accounts = [{ id: `acc_${new Date().getTime()}`, name: 'Готівка', initialBalance: 0 }];
-    if (!db.data[nickname].transactions) db.data[nickname].transactions = [];
-    if (!db.data[nickname].settings) db.data[nickname].settings = { monthlyIncome: 30000, percentNecessities: 50, percentFun: 30, percentSavings: 20 };
-    if (!db.data[nickname].goals) db.data[nickname].goals = []; // <-- !!! ДОДАНО ПЕРЕВІРКУ ЦІЛЕЙ !!!
-
-    writeDb(db);
-    res.status(200).json(db.data[nickname]);
-});
-
-// --- API: Транзакції (Без змін) ---
-app.post('/transactions/:nickname', (req, res) => {
-    // ... (без змін)
-    const { nickname } = req.params;
-    const txData = req.body;
-    if (!txData.description || !txData.amount || !txData.type || !txData.date || !txData.accountId) {
-        return res.status(400).json({ message: 'Не заповнені всі поля' });
-    }
-    const db = readDb();
-    if (!db.data[nickname]) return res.status(404).json({ message: 'Користувач не знайдений' });
-    if (!db.data[nickname].transactions) db.data[nickname].transactions = [];
-    const newTransaction = { ...txData, id: `tx_${new Date().getTime()}`, amount: parseFloat(txData.amount) };
-    db.data[nickname].transactions.unshift(newTransaction);
-    writeDb(db);
-    res.status(201).json(db.data[nickname].transactions);
-});
-
-app.put('/transactions/:nickname/:txId', (req, res) => {
-    // ... (без змін)
-    const { nickname, txId } = req.params;
-    const updatedTxData = req.body;
-    const db = readDb();
-    if (!db.data[nickname] || !db.data[nickname].transactions) return res.status(404).json({ message: 'Дані не знайдено' });
-    const txIndex = db.data[nickname].transactions.findIndex(tx => tx.id === txId);
-    if (txIndex === -1) return res.status(404).json({ message: 'Транзакцію не знайдено' });
-    db.data[nickname].transactions[txIndex] = { ...db.data[nickname].transactions[txIndex], ...updatedTxData, amount: parseFloat(updatedTxData.amount) };
-    writeDb(db);
-    res.status(200).json(db.data[nickname].transactions);
-});
-
-app.delete('/transactions/:nickname/:txId', (req, res) => {
-    // ... (без змін)
-    const { nickname, txId } = req.params;
-    const db = readDb();
-    if (!db.data[nickname] || !db.data[nickname].transactions) return res.status(404).json({ message: 'Дані не знайдено' });
-    const txIndex = db.data[nickname].transactions.findIndex(tx => tx.id === txId);
-    if (txIndex === -1) return res.status(404).json({ message: 'Транзакцію не знайдено' });
-    db.data[nickname].transactions.splice(txIndex, 1);
-    writeDb(db);
-    res.status(200).json(db.data[nickname].transactions);
-});
-
-// --- API: Рахунки (Без змін) ---
-app.post('/accounts/:nickname', (req, res) => {
-    // ... (без змін)
-    const { nickname } = req.params;
-    const { name, initialBalance } = req.body;
-    const db = readDb();
-    if (!db.data[nickname]) return res.status(404).json({ message: 'Користувач не знайдений' });
-    if (!db.data[nickname].accounts) db.data[nickname].accounts = [];
-    const newAccount = { id: `acc_${new Date().getTime()}`, name, initialBalance: parseFloat(initialBalance) || 0 };
-    db.data[nickname].accounts.push(newAccount);
-    writeDb(db);
-    res.status(201).json(db.data[nickname].accounts);
-});
-
-app.put('/accounts/:nickname/:accId', (req, res) => {
-    // ... (без змін)
-    const { nickname, accId } = req.params;
-    const { name, initialBalance } = req.body;
-    const db = readDb();
-    if (!db.data[nickname] || !db.data[nickname].accounts) return res.status(404).json({ message: 'Дані не знайдено' });
-    const accIndex = db.data[nickname].accounts.findIndex(acc => acc.id === accId);
-    if (accIndex === -1) return res.status(404).json({ message: 'Рахунок не знайдено' });
-    db.data[nickname].accounts[accIndex] = { ...db.data[nickname].accounts[accIndex], name: name, initialBalance: parseFloat(initialBalance) || 0 };
-    writeDb(db);
-    res.status(200).json(db.data[nickname].accounts);
-});
-
-app.delete('/accounts/:nickname/:accId', (req, res) => {
-    // ... (без змін)
-    const { nickname, accId } = req.params;
-    const db = readDb();
-    if (!db.data[nickname] || !db.data[nickname].accounts) return res.status(404).json({ message: 'Дані не знайдено' });
-    const accIndex = db.data[nickname].accounts.findIndex(acc => acc.id === accId);
-    if (accIndex === -1) return res.status(404).json({ message: 'Рахунок не знайдено' });
-    if (db.data[nickname].accounts.length === 1) return res.status(400).json({ message: 'Неможливо видалити останній рахунок' });
-    db.data[nickname].accounts.splice(accIndex, 1);
-    writeDb(db);
-    res.status(200).json(db.data[nickname].accounts);
-});
-
-// --- API: Налаштування (Без змін) ---
-app.put('/settings/:nickname', (req, res) => {
-    // ... (без змін)
-    const { nickname } = req.params;
-    const newSettings = req.body;
-    const db = readDb();
-    if (!db.data[nickname]) return res.status(404).json({ message: 'Користувач не знайдений' });
-    db.data[nickname].settings = newSettings;
-    writeDb(db);
-    res.status(200).json(db.data[nickname].settings);
-});
-
-// --- API: ІМПОРТ (!!! ВИПРАВЛЕНО БАГ !!!) ---
-
+// --- Допоміжна функція (для дат, без змін) ---
 const parseBankDate = (dateString) => {
     try {
         const [date, time] = dateString.split(' ');
@@ -198,14 +55,282 @@ const parseBankDate = (dateString) => {
     }
 };
 
+// --- API: Автентифікація ---
+
+// Реєстрація: Створює новий документ у колекції 'users'
+app.post('/register', async (req, res) => {
+    const { nickname, password } = req.body;
+    if (!nickname || !password) return res.status(400).json({ message: 'Потрібен нік та пароль' });
+
+    try {
+        const existingUser = await usersCollection.findOne({ nickname: nickname });
+        if (existingUser) {
+            return res.status(400).json({ message: 'Цей нік вже зайнятий' });
+        }
+
+        const hashedPassword = await bcrypt.hash(password, saltRounds);
+
+        // Cтруктура даних нового користувача
+        const newUserDocument = {
+            nickname: nickname,
+            password: hashedPassword,
+            accounts: [{ id: `acc_${new Date().getTime()}`, name: 'Готівка', initialBalance: 0 }],
+            transactions: [],
+            settings: {
+                monthlyIncome: 30000,
+                percentNecessities: 50,
+                percentFun: 30,
+                percentSavings: 20
+            },
+            goals: []
+        };
+
+        await usersCollection.insertOne(newUserDocument);
+        res.status(201).json({ message: 'Користувача створено' });
+
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// Вхід: Шукає документ та перевіряє пароль
+app.post('/login', async (req, res) => {
+    const { nickname, password } = req.body;
+    try {
+        const user = await usersCollection.findOne({ nickname: nickname });
+        if (!user) {
+            return res.status(404).json({ message: 'Користувача не знайдено' });
+        }
+
+        const match = await bcrypt.compare(password, user.password);
+        if (match) {
+            res.status(200).json({ message: 'Вхід успішний', nickname: nickname });
+        } else {
+            res.status(401).json({ message: 'Неправильний пароль' });
+        }
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// --- API: Дані ---
+
+// Отримання даних: Знаходить документ користувача і повертає його
+app.get('/data/:nickname', async (req, res) => {
+    const { nickname } = req.params;
+    try {
+        const user = await usersCollection.findOne({ nickname: nickname });
+        if (!user) {
+            return res.status(404).json({ message: 'Дані користувача не знайдено' });
+        }
+
+        // Повертаємо всі дані, окрім пароля
+        const { password, _id, ...userData } = user; // Видаляємо пароль та _id
+        res.status(200).json(userData);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// --- API: Транзакції ---
+
+// Додавання транзакції: Оновлює масив ($push)
+app.post('/transactions/:nickname', async (req, res) => {
+    const { nickname } = req.params;
+    const txData = req.body;
+    if (!txData.description || txData.amount === undefined || !txData.type || !txData.date || !txData.accountId) {
+        return res.status(400).json({ message: 'Не заповнені всі поля' });
+    }
+
+    const newTransaction = {
+        ...txData,
+        id: `tx_${new Date().getTime()}`,
+        amount: parseFloat(txData.amount)
+    };
+
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname },
+            // $push додає елемент в масив
+            // $position: 0 додає його на початок (unshift)
+            { $push: { transactions: { $each: [newTransaction], $position: 0 } } }
+        );
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(201).json(user.transactions);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// Оновлення транзакції: Оновлює елемент в масиві ($set)
+app.put('/transactions/:nickname/:txId', async (req, res) => {
+    const { nickname, txId } = req.params;
+    const updatedTxData = req.body;
+
+    try {
+        const result = await usersCollection.updateOne(
+            // Знайти користувача, у якого є транзакція з таким ID
+            { nickname: nickname, "transactions.id": txId },
+            // Встановити нові значення для полів цієї транзакції
+            // (знак $ - це та транзакція, що знайшлась)
+            {
+                $set: {
+                    "transactions.$.description": updatedTxData.description,
+                    "transactions.$.amount": parseFloat(updatedTxData.amount),
+                    "transactions.$.type": updatedTxData.type,
+                    "transactions.$.date": updatedTxData.date,
+                    "transactions.$.accountId": updatedTxData.accountId,
+                    "transactions.$.budgetType": updatedTxData.budgetType
+                }
+            }
+        );
+
+        if (result.matchedCount === 0) {
+            return res.status(404).json({ message: 'Транзакцію не знайдено' });
+        }
+
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(200).json(user.transactions);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// Видалення транзакції: Видаляє елемент з масиву ($pull)
+app.delete('/transactions/:nickname/:txId', async (req, res) => {
+    const { nickname, txId } = req.params;
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname },
+            // $pull видаляє з масиву 'transactions' об'єкт, де 'id' == txId
+            { $pull: { transactions: { id: txId } } }
+        );
+
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(200).json(user.transactions);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// --- API: Рахунки (така ж логіка $push, $set, $pull) ---
+
+app.post('/accounts/:nickname', async (req, res) => {
+    const { nickname } = req.params;
+    const { name, initialBalance } = req.body;
+    const newAccount = {
+        id: `acc_${new Date().getTime()}`,
+        name,
+        initialBalance: parseFloat(initialBalance) || 0
+    };
+
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname },
+            { $push: { accounts: newAccount } }
+        );
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(201).json(user.accounts);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+app.put('/accounts/:nickname/:accId', async (req, res) => {
+    const { nickname, accId } = req.params;
+    const { name, initialBalance } = req.body;
+
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname, "accounts.id": accId },
+            {
+                $set: {
+                    "accounts.$.name": name,
+                    "accounts.$.initialBalance": parseFloat(initialBalance) || 0
+                }
+            }
+        );
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(200).json(user.accounts);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+app.delete('/accounts/:nickname/:accId', async (req, res) => {
+    const { nickname, accId } = req.params;
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname },
+            { $pull: { accounts: { id: accId } } }
+        );
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(200).json(user.accounts);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// --- API: Налаштування ---
+app.put('/settings/:nickname', async (req, res) => {
+    const { nickname } = req.params;
+    const newSettings = req.body;
+
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname },
+            // Просто замінюємо весь об'єкт 'settings'
+            { $set: { settings: newSettings } }
+        );
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(200).json(user.settings);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// --- API: Цілі ---
+app.post('/goals/:nickname', async (req, res) => {
+    const { nickname } = req.params;
+    const { name, targetAmount, targetDate } = req.body;
+    const newGoal = {
+        id: `goal_${new Date().getTime()}`,
+        name,
+        targetAmount: parseFloat(targetAmount),
+        targetDate
+    };
+
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname },
+            { $push: { goals: newGoal } }
+        );
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(201).json(user.goals);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+app.delete('/goals/:nickname/:goalId', async (req, res) => {
+    const { nickname, goalId } = req.params;
+    try {
+        await usersCollection.updateOne(
+            { nickname: nickname },
+            { $pull: { goals: { id: goalId } } }
+        );
+        const user = await usersCollection.findOne({ nickname: nickname });
+        res.status(200).json(user.goals);
+    } catch (e) {
+        res.status(500).json({ message: `Помилка сервера: ${e.message}` });
+    }
+});
+
+// --- API: ІМПОРТ (змінено лише збереження) ---
 app.post('/import/:nickname', upload.single('file'), (req, res) => {
     const { nickname } = req.params;
     const { bankType, accountId } = req.body;
     const filePath = req.file.path;
-
-    if (!bankType || !accountId) return res.status(400).json({ message: 'Не вибрано тип банку або рахунок' });
-    const db = readDb();
-    if (!db.data[nickname]) return res.status(404).json({ message: 'Користувач не знайдений' });
 
     const newTransactions = [];
     let csvOptions = {};
@@ -216,21 +341,13 @@ app.post('/import/:nickname', upload.single('file'), (req, res) => {
             headers: ['Дата', 'Категорія', 'Картка', 'Опис операції', 'Сума в валюті картки', 'Валюта картки', 'Сума в валюті транзакції', 'Валюта транзакції', 'Залишок на кінець періоду', 'Валюта залишку'],
             skipLines: 2
         };
-        mapping = {
-            date: 'Дата',
-            description: 'Опис операції',
-            amount: 'Сума в валюті картки'
-        };
+        mapping = { date: 'Дата', description: 'Опис операції', amount: 'Сума в валюті картки' };
     } else if (bankType === 'mono') {
         csvOptions = {
             headers: ['Дата i час операції', 'Деталі операції', 'MCC', 'Сума в валюті картки (UAH)', 'Сума в валюті операції', 'Валюта', 'Курс', 'Сума комісій (UAH)', 'Сума кешбеку (UAH)', 'Залишок після операції'],
             skipLines: 22
         };
-        mapping = {
-            date: 'Дата i час операції',
-            description: 'Деталі операції',
-            amount: 'Сума в валюті картки (UAH)'
-        };
+        mapping = { date: 'Дата i час операції', description: 'Деталі операції', amount: 'Сума в валюті картки (UAH)' };
     } else {
         return res.status(400).json({ message: 'Невідомий тип банку' });
     }
@@ -238,38 +355,43 @@ app.post('/import/:nickname', upload.single('file'), (req, res) => {
     fs.createReadStream(filePath)
         .pipe(csv(csvOptions))
         .on('data', (row) => {
-            const rawAmount = parseFloat(row[mapping.amount]); // <-- Сума з файлу (може бути -100)
+            const rawAmount = parseFloat(row[mapping.amount]);
             const description = row[mapping.description];
             const date = row[mapping.date];
 
             if (description && date && !isNaN(rawAmount)) {
-
-                // !!! --- ОСЬ ВИПРАВЛЕННЯ --- !!!
-                const finalAmount = Math.abs(rawAmount); // <-- 100
-                const finalType = rawAmount >= 0 ? 'income' : 'expense'; // <-- 'expense'
-
+                const finalAmount = Math.abs(rawAmount);
+                const finalType = rawAmount >= 0 ? 'income' : 'expense';
                 newTransactions.push({
                     id: `imp_${new Date().getTime()}_${Math.random()}`,
                     date: parseBankDate(date),
                     description: description,
-                    amount: finalAmount, // <-- Зберігаємо 100
-                    type: finalType,     // <-- Зберігаємо 'expense'
+                    amount: finalAmount,
+                    type: finalType,
                     accountId: accountId,
                     budgetType: finalType === 'income' ? null : 'necessities'
                 });
-            } else {
-                console.warn('Пропущено рядок (не вдалося розпізнати):', row);
             }
         })
-        .on('end', () => {
-            if (newTransactions.length === 0) console.warn('!!! Жодної транзакції не розпізнано.');
+        .on('end', async () => {
+            try {
+                // !!! ЗАМІНА writeDb() на MongoDB !!!
+                if (newTransactions.length > 0) {
+                    await usersCollection.updateOne(
+                        { nickname: nickname },
+                        { $push: { transactions: { $each: newTransactions, $position: 0 } } }
+                    );
+                }
 
-            db.data[nickname].transactions.unshift(...newTransactions);
-            writeDb(db);
-            fs.unlinkSync(filePath);
+                fs.unlinkSync(filePath); // Видаляємо тимчасовий файл
 
-            console.log(`Імпортовано ${newTransactions.length} транзакцій`);
-            res.status(200).json(db.data[nickname].transactions);
+                const user = await usersCollection.findOne({ nickname: nickname });
+                console.log(`Імпортовано ${newTransactions.length} транзакцій`);
+                res.status(200).json(user.transactions);
+            } catch (e) {
+                fs.unlinkSync(filePath); // Видаляємо, навіть якщо помилка
+                res.status(500).json({ message: `Помилка збереження імпорту: ${e.message}` });
+            }
         })
         .on('error', (error) => {
             fs.unlinkSync(filePath);
@@ -277,54 +399,18 @@ app.post('/import/:nickname', upload.single('file'), (req, res) => {
         });
 });
 
-// --- !!! НОВІ API ДЛЯ ЦІЛЕЙ !!! ---
-
-// Створення нової цілі
-app.post('/goals/:nickname', (req, res) => {
-    const { nickname } = req.params;
-    const { name, targetAmount, targetDate } = req.body;
-
-    if (!name || !targetAmount || !targetDate) {
-        return res.status(400).json({ message: 'Не заповнені всі поля цілі' });
-    }
-
-    const db = readDb();
-    if (!db.data[nickname]) return res.status(404).json({ message: 'Користувач не знайдений' });
-    if (!db.data[nickname].goals) db.data[nickname].goals = [];
-
-    const newGoal = {
-        id: `goal_${new Date().getTime()}`,
-        name,
-        targetAmount: parseFloat(targetAmount),
-        targetDate // Зберігаємо у форматі YYYY-MM-DD
-    };
-
-    db.data[nickname].goals.push(newGoal);
-    writeDb(db);
-    res.status(201).json(db.data[nickname].goals);
-});
-
-// Видалення цілі
-app.delete('/goals/:nickname/:goalId', (req, res) => {
-    const { nickname, goalId } = req.params;
-    const db = readDb();
-    if (!db.data[nickname] || !db.data[nickname].goals) {
-        return res.status(404).json({ message: 'Дані не знайдено' });
-    }
-
-    const goalIndex = db.data[nickname].goals.findIndex(g => g.id === goalId);
-    if (goalIndex === -1) {
-        return res.status(404).json({ message: 'Ціль не знайдено' });
-    }
-
-    db.data[nickname].goals.splice(goalIndex, 1);
-    writeDb(db);
-    res.status(200).json(db.data[nickname].goals); // Повертаємо оновлений список
-});
-
-
 // --- Запуск сервера ---
-app.listen(port, () => {
-    console.log(`Сервер Money Manager запущено на http://localhost:${port}`);
-    readDb();
-});
+// Запускаємо сервер ТІЛЬКИ ПІСЛЯ підключення до БД
+if (uri) {
+    connectDb().then(() => {
+        app.listen(port, () => {
+            console.log(`Сервер Money Manager запущено на http://localhost:${port} і підключено до MongoDB.`);
+        });
+    });
+} else {
+    // Локальний запуск без URI (не рекомендовано, але можливо для тестів)
+    console.warn("!!! Увага: MONGODB_URI не встановлено. Сервер не буде працювати.");
+    // app.listen(port, () => {
+    //     console.log(`Сервер Money Manager запущено локально, АЛЕ БЕЗ БАЗИ ДАНИХ.`);
+    // });
+}
